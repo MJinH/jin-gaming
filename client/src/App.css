@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display:flex;
+  flex-direction: column;
+}
+
+.items-top {
+  margin: 50px 0;
+}
+
+.search {
+  margin-left: 40px;
+}
+
+.searchItem {
+  height: 40px;
+  width: 30rem;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  font-weight: bold;
+}
+
+.dropdwon-list {
+  margin-right: 10px;
+}
+
+.items-center {
+  	/* the notes list div is a css grid container  */
+	display: grid;
+	/* this adds spacing around each of our gird items in this case our notes */
+	grid-gap: 3rem;
+	/*This specifies how mnay clumns we want our grid to have*/
+	/*css grid detects that another not of 250px can fit on the screen. It automatically adds it for us*/
+	grid-template-columns: repeat(
+		3,
+		/*a column cannot be smaller than 250 pixels and it can not be bigger than 1fr*/
+		minmax(250px, 1fr)
+	);
+  width: 80rem;
+  height: 65rem;
+}
+
+.product-infos {
+  width: 90%;
+}
+
+.product-price {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.items-bottom  {
+ margin-top: 40px;
+}
+
+.detail-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.detail-wrapper {
+  width: 1000px;
+  height: 700px;
+  border:1px solid grey;
+  border-radius: 10px;
+}
+
+.detail-right,
+.detail-left {
+  flex:1;
+  background-color: #f5f5f5;
+}
+
+.right-top {
+  height: 70%;
+}
+
+.p-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.p-price {
+  font-size: 18px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.youtube-icon,
+.amazon-icon {
+  width: 80px;
+  height: 80px;
+  
+}
+.youtube-icon {
+  margin-right: 4rem;
+}
+
+.error-page {
+  width: 100vw;
+  height: 100vh; 
+}
+
+.error-message {
+  font-size: 28px;
+}
